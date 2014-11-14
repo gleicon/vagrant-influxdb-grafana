@@ -1,0 +1,14 @@
+server {
+    listen 80;
+    server_name localhost;
+
+    client_max_body_size 64M;
+    keepalive_timeout 5;
+    charset utf-8;
+    root /opt/grafana-1.7.0/;
+    
+    location / {
+        index index.html;
+    }
+
+}
